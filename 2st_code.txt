@@ -1,0 +1,1128 @@
+
+ujin@DESKTOP-CN6T3UT MINGW64 /
+$ cd ~
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~ (develop)
+$ cd C:\Users\ujin\Desktop\Contributon
+bash: cd: C:UsersujinDesktopContributon: No such file or directory
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~ (develop)
+$ cd C:/Users/ujin/Desktop/Contributon
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon (develop)
+$ git init
+Initialized empty Git repository in C:/Users/ujin/Desktop/Contributon/.git/
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon (master)
+$ git clone https://github.com/u0jin/Test0827.git
+Cloning into 'Test0827'...
+remote: Counting objects: 3, done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon (master)
+$ git clone https://github.com/Unithon7thTeam4/Test0827.git
+fatal: destination path 'Test0827' already exists and is not an empty directory.
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon (master)
+$ git clone https://github.com/Unithon7thTeam4/Test0827.git
+Cloning into 'Test0827'...
+remote: Counting objects: 3, done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon (master)
+$ git add .
+warning: LF will be replaced by CRLF in 1차 모임/git-training-ex-v2/commit2/report_card.c.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in 1차 모임/git-training-ex-v2/commit3/report_card.c.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in 1차 모임/git-training-ex-v2/commit4/report_card.c.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in 1차 모임/git-training-ex-v2/commit5/report_card.c.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in 1차 모임/git-training-ex-v2/commit6-1/report_card.c.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in 1차 모임/git-training-ex-v2/commit6/report_card.c.
+The file will have its original line endings in your working directory.
+warning: adding embedded git repository: Test0827
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> Test0827
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached Test0827
+hint:
+hint: See "git help submodule" for more information.
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon (master)
+$ cd Test0827/
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon/Test0827 (master)
+$ git add .
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon/Test0827 (master)
+$ git commit -m "testUJ"
+[master 15c7571] testUJ
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon/Test0827 (master)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Writing objects: 100% (3/3), 252 bytes | 252.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/Unithon7thTeam4/Test0827.git
+   bb382ea..15c7571  master -> master
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon/Test0827 (master)
+$ git -v
+unknown option: -v
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon/Test0827 (master)
+$ git branch -a
+* master
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/master
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon/Test0827 (master)
+$ git branch -b "csh"
+error: unknown switch `b'
+usage: git branch [<options>] [-r | -a] [--merged | --no-merged]
+   or: git branch [<options>] [-l] [-f] <branch-name> [<start-point>]
+   or: git branch [<options>] [-r] (-d | -D) <branch-name>...
+   or: git branch [<options>] (-m | -M) [<old-branch>] <new-branch>
+   or: git branch [<options>] (-c | -C) [<old-branch>] <new-branch>
+   or: git branch [<options>] [-r | -a] [--points-at]
+   or: git branch [<options>] [-r | -a] [--format]
+
+Generic options
+    -v, --verbose         show hash and subject, give twice for upstream branch
+    -q, --quiet           suppress informational messages
+    -t, --track           set up tracking mode (see git-pull(1))
+    -u, --set-upstream-to <upstream>
+                          change the upstream info
+    --unset-upstream      Unset the upstream info
+    --color[=<when>]      use colored output
+    -r, --remotes         act on remote-tracking branches
+    --contains <commit>   print only branches that contain the commit
+    --no-contains <commit>
+                          print only branches that don't contain the commit
+    --abbrev[=<n>]        use <n> digits to display SHA-1s
+
+Specific git-branch actions:
+    -a, --all             list both remote-tracking and local branches
+    -d, --delete          delete fully merged branch
+    -D                    delete branch (even if not merged)
+    -m, --move            move/rename a branch and its reflog
+    -M                    move/rename a branch, even if target exists
+    -c, --copy            copy a branch and its reflog
+    -C                    copy a branch, even if target exists
+    --list                list branch names
+    -l, --create-reflog   create the branch's reflog
+    --edit-description    edit the description for the branch
+    -f, --force           force creation, move/rename, deletion
+    --merged <commit>     print only branches that are merged
+    --no-merged <commit>  print only branches that are not merged
+    --column[=<style>]    list branches in columns
+    --sort <key>          field name to sort on
+    --points-at <object>  print only branches of the object
+    -i, --ignore-case     sorting and filtering are case insensitive
+    --format <format>     format to use for the output
+
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon/Test0827 (master)
+$ git remote -v
+origin  https://github.com/Unithon7thTeam4/Test0827.git (fetch)
+origin  https://github.com/Unithon7thTeam4/Test0827.git (push)
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon/Test0827 (master)
+$ git remote -v
+origin  https://github.com/Unithon7thTeam4/Test0827.git (fetch)
+origin  https://github.com/Unithon7thTeam4/Test0827.git (push)
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon/Test0827 (master)
+$ git remote add upstream https://github.com/u0jin/Test0827.git
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon/Test0827 (master)
+$ git remote -v
+origin  https://github.com/Unithon7thTeam4/Test0827.git (fetch)
+origin  https://github.com/Unithon7thTeam4/Test0827.git (push)
+upstream        https://github.com/u0jin/Test0827.git (fetch)
+upstream        https://github.com/u0jin/Test0827.git (push)
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon/Test0827 (master)
+$ git fetch upstream master
+remote: Counting objects: 4, done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 4 (delta 0), reused 3 (delta 0), pack-reused 0
+Unpacking objects: 100% (4/4), done.
+From https://github.com/u0jin/Test0827
+ * branch            master     -> FETCH_HEAD
+ * [new branch]      master     -> upstream/master
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon/Test0827 (master)
+$ git rebase upstream/master
+First, rewinding head to replay your work on top of it...
+Applying: testUJ
+Using index info to reconstruct a base tree...
+M       README.md
+Falling back to patching base and 3-way merge...
+Auto-merging README.md
+CONFLICT (content): Merge conflict in README.md
+error: Failed to merge in the changes.
+Patch failed at 0001 testUJ
+Use 'git am --show-current-patch' to see the failed patch
+
+Resolve all conflicts manually, mark them as resolved with
+"git add/rm <conflicted_files>", then run "git rebase --continue".
+You can instead skip this commit: run "git rebase --skip".
+To abort and get back to the state before "git rebase", run "git rebase --abort".
+
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon/Test0827 (master|REBASE 1/1)
+$
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon/Test0827 (master|REBASE 1/1)
+$
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon/Test0827 (master|REBASE 1/1)
+$ git pull
+error: Pulling is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon/Test0827 (master|REBASE 1/1)
+$ git remote -
+error: Unknown subcommand: -
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon/Test0827 (master|REBASE 1/1)
+$ git remote -v
+origin  https://github.com/Unithon7thTeam4/Test0827.git (fetch)
+origin  https://github.com/Unithon7thTeam4/Test0827.git (push)
+upstream        https://github.com/u0jin/Test0827.git (fetch)
+upstream        https://github.com/u0jin/Test0827.git (push)
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon/Test0827 (master|REBASE 1/1)
+$ git fetch upstream master
+From https://github.com/u0jin/Test0827
+ * branch            master     -> FETCH_HEAD
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon/Test0827 (master|REBASE 1/1)
+$ git rebase upstream/master
+
+It seems that there is already a rebase-apply directory, and
+I wonder if you are in the middle of another rebase.  If that is the
+case, please try
+        git rebase (--continue | --abort | --skip)
+If that is not the case, please
+        rm -fr "C:/Users/ujin/Desktop/Contributon/Test0827/.git/rebase-apply"
+and run me again.  I am stopping in case you still have something
+valuable there.
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon/Test0827 (master|REBASE 1/1)
+$ git status
+rebase in progress; onto e058015
+You are currently rebasing branch 'master' on 'e058015'.
+  (fix conflicts and then run "git rebase --continue")
+  (use "git rebase --skip" to skip this patch)
+  (use "git rebase --abort" to check out the original branch)
+
+Unmerged paths:
+  (use "git reset HEAD <file>..." to unstage)
+  (use "git add <file>..." to mark resolution)
+
+        both modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon/Test0827 (master|REBASE 1/1)
+$ git diff
+diff --cc README.md
+index 6a0de11,5a9112c..0000000
+--- a/README.md
++++ b/README.md
+@@@ -1,2 -1,2 +1,6 @@@
+  # Test0827
+ -ujin
+++<<<<<<< HEAD
+ +sanghee choi
+++=======
+++ujin
+++>>>>>>> testUJ
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon/Test0827 (master|REBASE 1/1)
+$
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon/Test0827 (master|REBASE 1/1)
+$
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon/Test0827 (master|REBASE 1/1)
+$ git status
+rebase in progress; onto e058015
+You are currently rebasing branch 'master' on 'e058015'.
+  (fix conflicts and then run "git rebase --continue")
+  (use "git rebase --skip" to skip this patch)
+  (use "git rebase --abort" to check out the original branch)
+
+Unmerged paths:
+  (use "git reset HEAD <file>..." to unstage)
+  (use "git add <file>..." to mark resolution)
+
+        both modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon/Test0827 (master|REBASE 1/1)
+$ git add
+Nothing specified, nothing added.
+Maybe you wanted to say 'git add .'?
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon/Test0827 (master|REBASE 1/1)
+$ git add .
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon/Test0827 (master|REBASE 1/1)
+$ git rebase --continue
+Applying: testUJ
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon/Test0827 (master)
+$ git shortlog
+pengin7384 (1):
+      CSH
+
+ujin (1):
+      testUJ
+
+youjin kim (2):
+      Initial commit
+      Merge pull request #1 from pengin7384/master
+
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon/Test0827 (master)
+$ git show
+commit 83e1aa1a55144462b9f9f4b65cd8a26f1d8a1bbc (HEAD -> master)
+Author: ujin <yujin5836@gmail.com>
+Date:   Mon Aug 27 20:02:13 2018 +0900
+
+    testUJ
+
+diff --git a/README.md b/README.md
+index 6a0de11..c77d158 100644
+--- a/README.md
++++ b/README.md
+@@ -1,2 +1,3 @@
+ # Test0827
+ sanghee choi
++ujin
+\ No newline at end of file
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon/Test0827 (master)
+$ git push origin master
+To https://github.com/Unithon7thTeam4/Test0827.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/Unithon7thTeam4/Test0827.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon/Test0827 (master)
+$ git push origin master -f
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (7/7), 1.08 KiB | 553.00 KiB/s, done.
+Total 7 (delta 0), reused 0 (delta 0)
+To https://github.com/Unithon7thTeam4/Test0827.git
+ + 15c7571...83e1aa1 master -> master (forced update)
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon/Test0827 (master)
+$ git remote -v
+origin  https://github.com/Unithon7thTeam4/Test0827.git (fetch)
+origin  https://github.com/Unithon7thTeam4/Test0827.git (push)
+upstream        https://github.com/u0jin/Test0827.git (fetch)
+upstream        https://github.com/u0jin/Test0827.git (push)
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon/Test0827 (master)
+$ git fetch upstream master
+remote: Counting objects: 1, done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (1/1), done.
+From https://github.com/u0jin/Test0827
+ * branch            master     -> FETCH_HEAD
+   e058015..324f85e  master     -> upstream/master
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon/Test0827 (master)
+$ git add .
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon/Test0827 (master)
+$ git diff
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon/Test0827 (master)
+$ git log
+commit 83e1aa1a55144462b9f9f4b65cd8a26f1d8a1bbc (HEAD -> master, origin/master, origin/HEAD)
+Author: ujin <yujin5836@gmail.com>
+Date:   Mon Aug 27 20:02:13 2018 +0900
+
+    testUJ
+
+commit e05801549cd4562af5bd6647fcf7f4a7b3e77509
+Merge: bb382ea 0249d8e
+Author: youjin kim <38131695+u0jin@users.noreply.github.com>
+Date:   Mon Aug 27 20:25:18 2018 +0900
+
+    Merge pull request #1 from pengin7384/master
+
+    CSH
+
+commit 0249d8e9059d33698f78c715f512b8736ab97d62
+Author: pengin7384 <pengin7384@gmail.com>
+Date:   Mon Aug 27 03:53:17 2018 -0700
+
+    CSH
+
+commit bb382eac563b675aa46d9c6e9bd593e18c4cfc34
+Author: youjin kim <38131695+u0jin@users.noreply.github.com>
+Date:   Mon Aug 27 19:43:12 2018 +0900
+
+    Initial commit
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon/Test0827 (master)
+$ git commit -m "add Node"
+[master b45307c] add Node
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon/Test0827 (master)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Writing objects: 100% (3/3), 274 bytes | 274.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/Unithon7thTeam4/Test0827.git
+   83e1aa1..b45307c  master -> master
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon/Test0827 (master)
+$ git fetch upstream master:master
+fatal: Refusing to fetch into current branch refs/heads/master of non-bare repository
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon/Test0827 (master)
+$ git fetch upstream master
+remote: Counting objects: 4, done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 4 (delta 0), reused 3 (delta 0), pack-reused 0
+Unpacking objects: 100% (4/4), done.
+From https://github.com/u0jin/Test0827
+ * branch            master     -> FETCH_HEAD
+   324f85e..1af5333  master     -> upstream/master
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon/Test0827 (master)
+$ git rebase upstream master
+fatal: Needed a single revision
+invalid upstream 'upstream'
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon/Test0827 (master)
+$ git rebase upstream/master
+First, rewinding head to replay your work on top of it...
+Applying: add Node
+Using index info to reconstruct a base tree...
+M       README.md
+Falling back to patching base and 3-way merge...
+Auto-merging README.md
+CONFLICT (content): Merge conflict in README.md
+error: Failed to merge in the changes.
+Patch failed at 0001 add Node
+Use 'git am --show-current-patch' to see the failed patch
+
+Resolve all conflicts manually, mark them as resolved with
+"git add/rm <conflicted_files>", then run "git rebase --continue".
+You can instead skip this commit: run "git rebase --skip".
+To abort and get back to the state before "git rebase", run "git rebase --abort".
+
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon/Test0827 (master|REBASE 1/1)
+$ git rebase -continue
+error: did you mean `--continue` (with two dashes ?)
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon/Test0827 (master|REBASE 1/1)
+$ git rebase --continue
+README.md: needs merge
+You must edit all merge conflicts and then
+mark them as resolved using git add
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon/Test0827 (master|REBASE 1/1)
+$ git push
+fatal: You are not currently on a branch.
+To push the history leading to the current (detached HEAD)
+state now, use
+
+    git push origin HEAD:<name-of-remote-branch>
+
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon/Test0827 (master|REBASE 1/1)
+$ git push git branch
+error: src refspec branch does not match any.
+error: failed to push some refs to 'git'
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon/Test0827 (master|REBASE 1/1)
+$ git branch
+* (no branch, rebasing master)
+  master
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon/Test0827 (master|REBASE 1/1)
+$
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon/Test0827 (master|REBASE 1/1)
+$
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon/Test0827 (master|REBASE 1/1)
+$ git push origin master -f
+fatal: unable to access 'https://github.com/Unithon7thTeam4/Test0827.git/': Could not resolve host: github.com
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon/Test0827 (master|REBASE 1/1)
+$ git push origin master -f
+Everything up-to-date
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon/Test0827 (master|REBASE 1/1)
+$ git status
+rebase in progress; onto 1af5333
+You are currently rebasing branch 'master' on '1af5333'.
+  (fix conflicts and then run "git rebase --continue")
+  (use "git rebase --skip" to skip this patch)
+  (use "git rebase --abort" to check out the original branch)
+
+Unmerged paths:
+  (use "git reset HEAD <file>..." to unstage)
+  (use "git add <file>..." to mark resolution)
+
+        both modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon/Test0827 (master|REBASE 1/1)
+$ git add .
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon/Test0827 (master|REBASE 1/1)
+$ git push origin master -f
+Everything up-to-date
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon/Test0827 (master|REBASE 1/1)
+$ git status
+rebase in progress; onto 1af5333
+You are currently rebasing branch 'master' on '1af5333'.
+  (all conflicts fixed: run "git rebase --continue")
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   README.md
+
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon/Test0827 (master|REBASE 1/1)
+$ git push origin master -f
+Everything up-to-date
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon/Test0827 (master|REBASE 1/1)
+$ git remote -v
+origin  https://github.com/Unithon7thTeam4/Test0827.git (fetch)
+origin  https://github.com/Unithon7thTeam4/Test0827.git (push)
+upstream        https://github.com/u0jin/Test0827.git (fetch)
+upstream        https://github.com/u0jin/Test0827.git (push)
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon/Test0827 (master|REBASE 1/1)
+$ git rebase --continue
+Applying: add Node
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon/Test0827 (master)
+$ git status
+On branch master
+Your branch and 'origin/master' have diverged,
+and have 4 and 1 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+nothing to commit, working tree clean
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon/Test0827 (master)
+$ git diff
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon/Test0827 (master)
+$ git push origin master
+To https://github.com/Unithon7thTeam4/Test0827.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/Unithon7thTeam4/Test0827.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon/Test0827 (master)
+$ git push origin master -f
+Enumerating objects: 12, done.
+Counting objects: 100% (12/12), done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (8/8), 1.73 KiB | 886.00 KiB/s, done.
+Total 8 (delta 0), reused 0 (delta 0)
+To https://github.com/Unithon7thTeam4/Test0827.git
+ + b45307c...797e9ca master -> master (forced update)
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon/Test0827 (master)
+$ git remote -v
+origin  https://github.com/Unithon7thTeam4/Test0827.git (fetch)
+origin  https://github.com/Unithon7thTeam4/Test0827.git (push)
+upstream        https://github.com/u0jin/Test0827.git (fetch)
+upstream        https://github.com/u0jin/Test0827.git (push)
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon/Test0827 (master)
+$ git branch
+* master
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon/Test0827 (master)
+$ git clone https://github.com/u0jin/ConflictSolve.git
+Cloning into 'ConflictSolve'...
+remote: Counting objects: 3, done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon/Test0827 (master)
+$ cd ..
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon (master)
+$ git clone https://github.com/u0jin/ConflictSolve.git
+Cloning into 'ConflictSolve'...
+remote: Counting objects: 3, done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon (master)
+$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon (master)
+$ git diff
+diff --git a/Test0827 b/Test0827
+index bb382ea..797e9ca 160000
+--- a/Test0827
++++ b/Test0827
+@@ -1 +1 @@
+-Subproject commit bb382eac563b675aa46d9c6e9bd593e18c4cfc34
++Subproject commit 797e9ca9b73fb9b3fbd292792ebd19e743a6adc5
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon (master)
+$ git add .
+warning: adding embedded git repository: ConflictSolve
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> ConflictSolve
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached ConflictSolve
+hint:
+hint: See "git help submodule" for more information.
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon (master)
+$ git remote -v
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon (master)
+$ git remote ^C
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon (master)
+$ git remote add origin n https://github.com/u0jin/Conflic_Test
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=<push|fetch>]
+                          set up remote as a mirror to push to or fetch from
+
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon (master)
+$ git remote add origin https://github.com/u0jin/ConflictSolve.git
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon (master)
+$ git remote add upstream https://github.com/pengin7384/ConflictSolve.git
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon (master)
+$ git remote -v
+origin  https://github.com/u0jin/ConflictSolve.git (fetch)
+origin  https://github.com/u0jin/ConflictSolve.git (push)
+upstream        https://github.com/pengin7384/ConflictSolve.git (fetch)
+upstream        https://github.com/pengin7384/ConflictSolve.git (push)
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon (master)
+$ git add .
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon (master)
+$ git fetch
+remote: Counting objects: 3, done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/u0jin/ConflictSolve
+ * [new branch]      master     -> origin/master
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon (master)
+$ git add .
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon (master)
+$ git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon (master)
+$ git remote -v
+origin  https://github.com/u0jin/ConflictSolve.git (fetch)
+origin  https://github.com/u0jin/ConflictSolve.git (push)
+upstream        https://github.com/pengin7384/ConflictSolve.git (fetch)
+upstream        https://github.com/pengin7384/ConflictSolve.git (push)
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon (master)
+$ git diff
+diff --git a/ConflictSolve b/ConflictSolve
+--- a/ConflictSolve
++++ b/ConflictSolve
+@@ -1 +1 @@
+-Subproject commit 8c94a71b083294471009dd16ef8705f71c177579
++Subproject commit 8c94a71b083294471009dd16ef8705f71c177579-dirty
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon (master)
+$ git branch
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon (master)
+$ git branch -a
+  remotes/origin/master
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon (master)
+$ git log
+fatal: your current branch 'master' does not have any commits yet
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon (master)
+$ git brnach
+git: 'brnach' is not a git command. See 'git --help'.
+
+The most similar command is
+        branch
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon (master)
+$ git branch
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon (master)
+$ git branch -a
+  remotes/origin/master
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   "1\354\260\250 \353\252\250\354\236\204/1\354\260\250 \353\252\250\354\236\204_2018\354\273\250\355\212\270\353\246\254\353\267\260\355\206\244_uftrace.txt"
+        new file:   "1\354\260\250 \353\252\250\354\236\204/Git-training-v3.pdf"
+        new file:   "1\354\260\250 \353\252\250\354\236\204/git-training-ex-v2.zip"
+        new file:   "1\354\260\250 \353\252\250\354\236\204/git-training-ex-v2/commit1/report_card.pdf"
+        new file:   "1\354\260\250 \353\252\250\354\236\204/git-training-ex-v2/commit2/report_card.c"
+        new file:   "1\354\260\250 \353\252\250\354\236\204/git-training-ex-v2/commit3/report_card.c"
+        new file:   "1\354\260\250 \353\252\250\354\236\204/git-training-ex-v2/commit4/report_card.c"
+        new file:   "1\354\260\250 \353\252\250\354\236\204/git-training-ex-v2/commit5/report_card.c"
+        new file:   "1\354\260\250 \353\252\250\354\236\204/git-training-ex-v2/commit6-1/report_card.c"
+        new file:   "1\354\260\250 \353\252\250\354\236\204/git-training-ex-v2/commit6/report_card.c"
+        new file:   "1\354\260\250 \353\252\250\354\236\204_2018\354\273\250\355\212\270\353\246\254\353\267\260\355\206\244_uftrace.txt"
+        new file:   "2018\354\273\250\355\212\270\353\246\254\353\267\260\355\206\244_uftrace.txt"
+        new file:   "2\354\260\250 \353\252\250\354\236\204.txt"
+        new file:   ConflictSolve
+        new file:   Test0827
+        new file:   "start \353\246\254\353\210\205\354\212\244\355\231\230\352\262\275 \354\204\244\354\271\230\354\236\221\354\227\205.txt"
+        new file:   "\354\232\260\353\266\204\355\210\254 \354\204\244\354\271\230 \354\227\220\353\237\254.PNG"
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+
+        modified:   ConflictSolve (modified content)
+
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon (master)
+$ ls
+'1차 모임'/                             ConflictSolve/
+'1차 모임_2018컨트리뷰톤_uftrace.txt'  'start 리눅스환경 설치작업.txt'
+ 2018컨트리뷰톤_uftrace.txt             Test0827/
+'2차 모임.txt'                         '우분투 설치 에러.PNG'
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon (master)
+$ ls -A
+ .git/                                  ConflictSolve/
+'1차 모임'/                            'start 리눅스환경 설치작업.txt'
+'1차 모임_2018컨트리뷰톤_uftrace.txt'   Test0827/
+ 2018컨트리뷰톤_uftrace.txt            '우분투 설치 에러.PNG'
+'2차 모임.txt'
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon (master)
+$ rm -rf .git/
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/Contributon (develop)
+$ cd ..
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop (develop)
+$ ls -A
+'0822 에트리 진행상황.txt'      'ms office 2016'/       아이디어/
+'2018_2 강의시간표.hwp'          Postman.lnk*           유니톤/
+ Algorithm/                      Sourcetree.lnk*        인강.txt
+ apitest/                       'Sublime Text 3.lnk'*   장고/
+ Contributon/                    YAPP/                  캡처.PNG
+ desktop.ini                    'YAPP 정리.txt'         한이음/
+'eclipse.exe - 바로 가기.lnk'*   공모전/                할일/
+ Git/                           '랩실 에트리'/          해커톤/
+ HOffice2014/                    서버인강/
+ JANDI.lnk*                      신청서/
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop (develop)
+$ rm -rf .git
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop (develop)
+$ ls -A
+'0822 에트리 진행상황.txt'      'ms office 2016'/       아이디어/
+'2018_2 강의시간표.hwp'          Postman.lnk*           유니톤/
+ Algorithm/                      Sourcetree.lnk*        인강.txt
+ apitest/                       'Sublime Text 3.lnk'*   장고/
+ Contributon/                    YAPP/                  캡처.PNG
+ desktop.ini                    'YAPP 정리.txt'         한이음/
+'eclipse.exe - 바로 가기.lnk'*   공모전/                할일/
+ Git/                           '랩실 에트리'/          해커톤/
+ HOffice2014/                    서버인강/
+ JANDI.lnk*                      신청서/
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop (develop)
+$ cd ..
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~ (develop)
+$ rm -rf .git
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~
+$ cd contributon
+bash: cd: contributon: No such file or directory
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~
+$ cd Desktop
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop
+$ cd contributon
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/contributon
+$ cd ConflictSolve
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/contributon/ConflictSolve (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/contributon/ConflictSolve (master)
+$ git add .
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/contributon/ConflictSolve (master)
+$ git remote -v
+origin  https://github.com/u0jin/ConflictSolve.git (fetch)
+origin  https://github.com/u0jin/ConflictSolve.git (push)
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/contributon/ConflictSolve (master)
+$ git remote add upstream https://github.com/pengin7384/ConflictSolve.git
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/contributon/ConflictSolve (master)
+$ git remote -v
+origin  https://github.com/u0jin/ConflictSolve.git (fetch)
+origin  https://github.com/u0jin/ConflictSolve.git (push)
+upstream        https://github.com/pengin7384/ConflictSolve.git (fetch)
+upstream        https://github.com/pengin7384/ConflictSolve.git (push)
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/contributon/ConflictSolve (master)
+$ git push
+Everything up-to-date
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/contributon/ConflictSolve (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   README.md
+
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/contributon/ConflictSolve (master)
+$ git commit -m "conflict Test"
+[master 5451d71] conflict Test
+ 1 file changed, 12 insertions(+), 1 deletion(-)
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/contributon/ConflictSolve (master)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 356 bytes | 356.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/u0jin/ConflictSolve.git
+   8c94a71..5451d71  master -> master
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/contributon/ConflictSolve (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/contributon/ConflictSolve (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/contributon/ConflictSolve (master)
+$ git add .
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/contributon/ConflictSolve (master)
+$ git commit -m "modify 2 "
+[master e3de0a3] modify 2
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/contributon/ConflictSolve (master)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 273 bytes | 273.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/u0jin/ConflictSolve.git
+   5451d71..e3de0a3  master -> master
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/contributon/ConflictSolve (master)
+$ git fetch
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/contributon/ConflictSolve (master)
+$ git fetch upstream master
+remote: Counting objects: 9, done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 9 (delta 2), reused 7 (delta 1), pack-reused 0
+Unpacking objects: 100% (9/9), done.
+From https://github.com/pengin7384/ConflictSolve
+ * branch            master     -> FETCH_HEAD
+ * [new branch]      master     -> upstream/master
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/contributon/ConflictSolve (master)
+$ git rebase upstream master
+fatal: Needed a single revision
+invalid upstream 'upstream'
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/contributon/ConflictSolve (master)
+$ git remote -v
+origin  https://github.com/u0jin/ConflictSolve.git (fetch)
+origin  https://github.com/u0jin/ConflictSolve.git (push)
+upstream        https://github.com/pengin7384/ConflictSolve.git (fetch)
+upstream        https://github.com/pengin7384/ConflictSolve.git (push)
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/contributon/ConflictSolve (master)
+$ git rebase upstream origin master
+usage: git rebase [-i] [options] [--exec <cmd>] [--onto <newbase>] [<upstream>] [<branch>]
+   or: git rebase [-i] [options] [--exec <cmd>] [--onto <newbase>] --root [<branch>]
+   or: git rebase --continue | --abort | --skip | --edit-todo
+
+Available options are
+    -v, --verbose         display a diffstat of what changed upstream
+    -q, --quiet           be quiet. implies --no-stat
+    --autostash           automatically stash/stash pop before and after
+    --fork-point          use 'merge-base --fork-point' to refine upstream
+    --onto ...            rebase onto given branch instead of upstream
+    -r, --rebase-merges[=...]
+                          try to rebase merges instead of skipping them
+    -p, --preserve-merges
+                          try to recreate merges instead of ignoring them
+    -s, --strategy ...    use the given merge strategy
+    --no-ff               cherry-pick all commits, even if unchanged
+    -m, --merge           use merging strategies to rebase
+    -i, --interactive     let the user edit the list of commits to rebase
+    -x, --exec ...        add exec lines after each commit of the editable list
+    -k, --keep-empty      preserve empty commits during rebase
+    --allow-empty-message
+                          allow rebasing commits with empty messages
+    -f, --force-rebase    force rebase even if branch is up to date
+    -X, --strategy-option ...
+                          pass the argument through to the merge strategy
+    --stat                display a diffstat of what changed upstream
+    -n, --no-stat         do not show diffstat of what changed upstream
+    --verify              allow pre-rebase hook to run
+    --rerere-autoupdate   allow rerere to update index with resolved conflicts
+    --root                rebase all reachable commits up to the root(s)
+    --autosquash          move commits that begin with squash!/fixup! under -i
+    --committer-date-is-author-date
+                          passed to 'git am'
+    --ignore-date         passed to 'git am'
+    --signoff             passed to 'git am'
+    --whitespace ...      passed to 'git apply'
+    --ignore-whitespace   passed to 'git apply'
+    -C ...                passed to 'git apply'
+    -S, --gpg-sign[=...]  GPG-sign commits
+
+Actions:
+    --continue            continue
+    --abort               abort and check out the original branch
+    --skip                skip current patch and continue
+    --edit-todo           edit the todo list during an interactive rebase
+    --quit                abort but keep HEAD where it is
+    --show-current-patch  show the patch file being applied or merged
+
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/contributon/ConflictSolve (master)
+$ git rebase upstream/master
+First, rewinding head to replay your work on top of it...
+Applying: modify 2
+.git/rebase-apply/patch:11: trailing whitespace.
+}
+warning: 1 line adds whitespace errors.
+Using index info to reconstruct a base tree...
+M       README.md
+Falling back to patching base and 3-way merge...
+Auto-merging README.md
+CONFLICT (content): Merge conflict in README.md
+error: Failed to merge in the changes.
+Patch failed at 0001 modify 2
+Use 'git am --show-current-patch' to see the failed patch
+
+Resolve all conflicts manually, mark them as resolved with
+"git add/rm <conflicted_files>", then run "git rebase --continue".
+You can instead skip this commit: run "git rebase --skip".
+To abort and get back to the state before "git rebase", run "git rebase --abort".
+
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/contributon/ConflictSolve (master|REBASE 1/1)
+$ git push
+fatal: You are not currently on a branch.
+To push the history leading to the current (detached HEAD)
+state now, use
+
+    git push origin HEAD:<name-of-remote-branch>
+
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/contributon/ConflictSolve (master|REBASE 1/1)
+$ git add .
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/contributon/ConflictSolve (master|REBASE 1/1)
+$ git status
+rebase in progress; onto 91f1241
+You are currently rebasing branch 'master' on '91f1241'.
+  (all conflicts fixed: run "git rebase --continue")
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   README.md
+
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/contributon/ConflictSolve (master|REBASE 1/1)
+$ git rebase --continue
+Applying: modify 2
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/contributon/ConflictSolve (master)
+$ git status
+On branch master
+Your branch and 'origin/master' have diverged,
+and have 6 and 1 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+nothing to commit, working tree clean
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/contributon/ConflictSolve (master)
+$ git push
+To https://github.com/u0jin/ConflictSolve.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/u0jin/ConflictSolve.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/contributon/ConflictSolve (master)
+$ git push origin master -f
+Enumerating objects: 16, done.
+Counting objects: 100% (16/16), done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (12/12), 2.02 KiB | 689.00 KiB/s, done.
+Total 12 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas: 100% (3/3), completed with 1 local object.
+To https://github.com/u0jin/ConflictSolve.git
+ + e3de0a3...c0f63ea master -> master (forced update)
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/contributon/ConflictSolve (master)
+$
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/contributon/ConflictSolve (master)
+$ $ git add .
+bash: $: command not found
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/contributon/ConflictSolve (master)
+$ ^C
+
+ujin@DESKTOP-CN6T3UT MINGW64 ~/Desktop/contributon/ConflictSolve (master)
+$

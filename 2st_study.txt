@@ -1,0 +1,36 @@
+fork를 떠서 나만의 저장소에서 작업을 한다.
+pull request -> 내가 작업한 내용을 너(공통의 작업용)가 가져가 
+
+$ git remote add upstream https://github.com/u0jin/Test0827.git
+
+fetch -> .git 에 저장해놓는거 
+pull 과 마찬가지로 둘다 가져오는건 맞는데 pull은 바로 들어감
+
+
+fetch로 가져오고  rebase해서 갱신
+으아,,,
+
+
+fetch로 가져오고 원본 upstream 을 가져오는거
+
+
+->>>git fetch upstream master
+
+$ git rebase --continue
+
+>>>git  rebase upstream/master  : rebase하는데 upstream 안의 master 로 
+
+
+
+origin  -> 개인 작업용
+
+upstream -> 공통의 작업용
+
+master -> branch 명 ==git branch 로 확인가능
+
+git remote -v =>
+
+
+
+rm -rf .git     >>확인할것
+
